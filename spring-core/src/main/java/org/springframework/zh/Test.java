@@ -128,4 +128,21 @@ public class Test {
 		}
 	}
 
+	public void rr(String str) {
+		switch (str) {
+			case "a":
+				aa(str);
+				break;
+			case "b":
+				mm();
+			case "c":
+				nn();
+				break;
+			default:
+				aa("this is default");
+				break;
+		}
+	}
+
+
 }
