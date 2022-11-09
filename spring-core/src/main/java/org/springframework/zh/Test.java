@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.function.Consumer;
 
 public class Test {
 
@@ -142,6 +143,13 @@ public class Test {
 				aa("this is default");
 				break;
 		}
+	}
+
+	public void ss() {
+		Consumer c = o -> {
+			aa(o);
+		};
+		c.accept("abc");
 	}
 
 
